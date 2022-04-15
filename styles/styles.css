@@ -24,7 +24,9 @@
     text-align: center;
 }
 
-
+a:hover{
+    text-decoration: underline;
+}
 body{
     background-color: black;
     color: white;
