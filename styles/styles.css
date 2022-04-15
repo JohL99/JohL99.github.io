@@ -24,6 +24,10 @@
     text-align: center;
 }
 
+#icon_20{
+    padding-right: 10px;
+}
+
 a:hover{
     text-decoration: underline;
 }
