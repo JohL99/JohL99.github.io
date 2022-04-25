@@ -30,8 +30,8 @@
         text-decoration: underline;
     }
     body{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 }
 @media print{
