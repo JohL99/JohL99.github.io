@@ -22,7 +22,7 @@
         margin-top: 0px;
         padding: 5px;
         margin: 5px;
-        text-align: center;
+        text-align: left;
     }
 
 
@@ -35,6 +35,12 @@
     }
     .page-break {
         page-break-after: always;
+    }
+
+    ul li {list-style-type: circle;}
+
+    h3 {
+        text-align: left;
     }
 }
 @media print{
@@ -71,4 +77,6 @@
     .page-break{
         page-break-after: always;
     }
+
+    ul li {list-style-type: circle;}
 }
