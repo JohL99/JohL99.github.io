@@ -1,0 +1,47 @@
+.code-line {
+    display: contents;  /* Makes each line of code take up its own line */
+    white-space: pre-wrap;  /* Ensures the text wraps correctly */
+    word-wrap: break-word;  /* Prevents overflow for long lines of text */
+    padding: 0px;
+    margin: 0px;
+}
+
+.code-comment {
+    color: rgb(20, 143, 57);  
+}
+
+.code-function {
+    color: rgb(231, 211, 25);  
+}
+
+.code-vartype {
+    color: rgb(31, 102, 196);  
+}
+
+.code-bracket-outer {
+    color: rgb(149, 29, 230);  
+}
+
+.code-bracket-inner-1{
+    color: rgb(31, 102, 196);  
+}
+
+.code-bracket-inner-2{
+    color: rgb(255, 234, 49);  
+}
+
+.code-d {
+    color: rgb(63, 129, 216);  
+}
+
+.code-n {
+    color: rgb(248, 164, 67);  
+}
+
+.code-value {
+    color: rgb(43, 224, 67);  
+}
+
+.code-quotes{
+    color: rgb(238, 146, 40);  
+}
