@@ -9,7 +9,7 @@ let nextPhraseDelay = 2000;
 
 function typeLoop() {
   const currentPhrase = phrases[phraseIndex];
-  console.log(currentPhrase);
+  //console.log(currentPhrase);
 
   if (!isDeleting) {
     typingText.textContent = currentPhrase.substring(0, charIndex++);
@@ -31,18 +31,24 @@ function typeLoop() {
   }
 }
 
+function toggleBox(el) {
+  el.classList.toggle('expanded-box');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+
   setTimeout(typeLoop, 1000);
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        //console.log('Animating:', entry.target);
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // remove if you only want animation once
+        observer.unobserve(entry.target); 
       }
     });
   }, {
-    threshold: 0.1 // trigger when 10% of the element is visible
+    threshold: 0.2 // 40% visible
   });
 
   document.querySelectorAll('.animate-slide-up').forEach(el => {
@@ -55,5 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsSection.scrollIntoView({ behavior: 'smooth' });
     }
   });
+
+  
+
 
 });

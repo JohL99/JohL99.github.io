@@ -1,10 +1,17 @@
+.tab-1 { margin-left: 2ch; }
+.tab-2 { margin-left: 4ch; }
+.tab-3 { margin-left: 6ch; }
+
 .code-line {
-    display: contents;  /* Makes each line of code take up its own line */
-    white-space: pre-wrap;  /* Ensures the text wraps correctly */
-    word-wrap: break-word;  /* Prevents overflow for long lines of text */
-    padding: 0px;
-    margin: 0px;
+    display: block;  
+    white-space: pre;  
+    word-wrap: break-word; 
 }
+
+.code-row {
+    white-space: nowrap;
+    display: flex;
+  }
 
 .code-comment {
     color: rgb(20, 143, 57);  

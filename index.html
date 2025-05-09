@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/code.css">
@@ -14,41 +16,46 @@
 
 <body class="bg-dark text-white">
 
+    <!-- top reload -->
     <div class="container" id="top-nav-container">
         <div class="top-nav" onclick="location.reload()">
-          <span class="default">
-            <span class="hl-gray angle-brackets">&lt;</span>
-            <span class="hl-blue">JohnLamprecht</span>
-            <span class="hl-gray angle-brackets"> /&gt;</span>
-          </span>
-          <span class="hovered">
-            <span class="hl-gray angle-brackets">&lt;</span>
-            <span class="hl-blue">JohnLamprecht</span>
-            <span class="hl-green"> onClick</span>
-            <span class="hl-gray">=</span>
-            <span class="hl-yellow">{reload}</span>
-            <span class="hl-gray angle-brackets"> /&gt;</span>
-          </span>
+            <span class="default">
+                <span class="hl-gray angle-brackets">&lt;</span>
+                <span class="hl-blue">JohnLamprecht</span>
+                <span class="hl-gray angle-brackets"> /&gt;</span>
+            </span>
+            <span class="hovered">
+                <span class="hl-gray angle-brackets">&lt;</span>
+                <span class="hl-blue">JohnLamprecht</span>
+                <span class="hl-green"> onClick</span>
+                <span class="hl-gray">=</span>
+                <span class="hl-yellow">{reload}</span>
+                <span class="hl-gray angle-brackets"> /&gt;</span>
+            </span>
         </div>
       </div>
 
-      <section class="d-flex align-items-center justify-content-center" style="min-height: 85vh;">
+    <!-- Header content -->
+    <section class="d-flex align-items-center justify-content-center" style="min-height: 85vh;">
         <div>
-        <h1 class="display-4 fw-bold">Hi, I'm <span class="text-info">John Lamprecht</span></h1>
-        <p class="lead">
-            <span id="typingText"></span><span id="cursor">|</span>
-        </p>
+            <h1 class="display-4 fw-bold">Hi, I'm <span class="text-info">John Lamprecht</span></h1>
+            <p class="lead">
+                <span id="typingText"></span><span id="cursor">|</span>
+            </p>
         </div>
     </section>
 
-    <div id="scrollTrigger" class="text-center mt-4 mb-5 pb-5" style="cursor: pointer;">
+
+    <!-- Scroll down arrow -->
+    <div id="scrollTrigger" class="text-center mt-2 mb-5 pb-5" style="cursor: pointer;">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1.646 3.646a.5.5 0 0 1 .708 0L8 9.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          <path fill-rule="evenodd" d="M1.646 7.646a.5.5 0 0 1 .708 0L8 13.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M1.646 3.646a.5.5 0 0 1 .708 0L8 9.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M1.646 7.646a.5.5 0 0 1 .708 0L8 13.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg>
     </div>
 
     
+    <!-- Skills section -->
     <section id="skills" class="py-5 bg-dark text-light mt-5 pt-5">
         <div class="container">
             <h2 class="text-center mb-5 display-5 fw-bold animate-slide-up">My Expertise</h2>
@@ -60,11 +67,17 @@
                 <div class="d-flex align-items-center mb-3">
                     <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
                     <div>
-                    <div class="fw-bold text-success">Automation and</div>
-                    <div>Optimisation</div>
+                        <div class="fw-bold text-success">Automation and Optimisation</div>
+                        <div>
+                            <span class="badge bg-secondary me-1">Python</span>
+                            <span class="badge bg-secondary me-1">Bash</span>
+                            <span class="badge bg-secondary">Batch</span>
+                        </div>
+                        <!-- <div>Python, Bash, Batch</div> -->
                     </div>
                 </div>
-                <p>Experienced in developing both front and back end technologies. Python, C, C++, Java, Javascript, PHP.</p>
+                <p>Experienced in creating tools and systems to automate and optimise processes and procedures.</p>
+                <!--Experienced in developing both front and back end technologies. Python, C, C++, Java, Javascript, PHP.-->
                 </div>
             </div>
 
@@ -74,8 +87,13 @@
                 <div class="d-flex align-items-center mb-3">
                     <div class="me-3 fs-1 text-primary"><i class="bi bi-lightning-charge-fill"></i></div>
                     <div>
-                    <div class="fw-bold text-primary">Frontend</div>
-                    <div>React, Flask, Django</div>
+                        <div class="fw-bold text-primary">Frontend</div>
+                        <div>
+                            <span class="badge bg-secondary me-1">React</span>
+                            <span class="badge bg-secondary me-1">Flask</span>
+                            <span class="badge bg-secondary">Django</span>
+                        </div>
+                        <!-- <div>React, Flask, Django</div> -->
                     </div>
                 </div>
                 <p>Passionate about performance and optimisation. Over 5 years of experience with HTML, CSS, JavaScript. Experienced in React-based frameworks and Python Frameworks.</p>
@@ -88,20 +106,25 @@
                 <div class="d-flex align-items-center mb-3">
                     <div class="me-3 fs-1 text-warning"><i class="bi bi-palette2"></i></div>
                     <div>
-                    <div class="fw-bold text-warning">Backend</div>
-                    <div>C, C++, Java, Python</div>
+                        <div class="fw-bold text-warning">Backend</div>
+                        <div>
+                            <span class="badge bg-secondary me-1">C/C++</span>
+                            <span class="badge bg-secondary me-1">Java</span>
+                            <span class="badge bg-secondary">Python</span>
+                        </div>
+                        <!-- <div>C, C++, Java, Python</div> -->
                     </div>
                 </div>
-                <p>Skilled at using and optimising data structures and algorithms to create robust backends for front facing applications, networking systems and operating systems.</p>
+                <p>Skilled at using data structures and algorithms to create and optimise robust backends for front facing applications, networking systems and operating systems.</p>
                 </div>
             </div>
 
             <!-- Quote -->
             <div class="col-12 animate-slide-up delay-3 mt-4 mb-4 pt-5">
                 <div class="p-4 border-top border-secondary text-center">
-                <blockquote class="blockquote mb-0">
-                    <p class="mb-2">The whole thing that makes a mathematician’s life worthwhile is that he gets the grudging admiration of three or four colleagues.</p>
-                    <br>
+                <blockquote class="blockquote">
+                    <p class="mb-4 pb-3">The whole thing that makes a mathematician’s life worthwhile is that he gets the grudging admiration of three or four colleagues.</p>
+                    <!-- <br> -->
                     <footer class="blockquote-footer text-light">Donald Knuth</footer>
                 </blockquote>
                 </div>
@@ -112,14 +135,22 @@
     </section>
 
 
+    <!-- About Me section -->
     <div class="row g-0 align-items-stretch mt-4 mb-5 pt-5 pb-5">
         <!-- empty space -->
         <div class="col-md-1"></div>
 
         <!-- text -->
         <div class="col-md-4 d-flex flex-column justify-content-center p-5 bg-dark text-light">
-          <h1 class="text-center mb-4">My Work</h1>
-          <p class="mb-4 text-justify animate-slide-up delay-1">
+          <h1 class="text-center mb-4 animate-slide-up delay-1">About Me</h1>
+          <p class="mb-4 text-justify animate-slide-up delay-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+            in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <p class="mb-4 text-justify animate-slide-up delay-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
             in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
@@ -133,40 +164,182 @@
         <!-- code snippet -->
         <div class="col-md-5">
             <div id="background-work" class="text-content fade-edges">
-                <div class="code-line code-comment">// Initialize physical memory, page table, and TLB</div>
-                <div class="code-line code-function">init</div><div class="code-line code-bracket-outer">()</div><div class="code-line">;</div>
+                <div class="code-row">
+                    <div class="code-line code-comment">// Initialize physical memory, page table, and TLB</div>
+                </div>
 
-                <div class="code-line code-vartype">int </div> logical_address = <div class="code-line code-value">-1</div><div class="code-line">;</div>
-                <div class="code-line code-vartype">int </div> frame_number = <div class="code-line code-value">-1</div><div class="code-line">;</div>
-                <div class="code-line code-vartype">int </div> offset = <div class="code-line code-value">-1</div><div class="code-line">;</div>
-                <div class="code-line code-vartype">int </div> page_number = <div class="code-line code-value">-1</div><div class="code-line">;</div>
+                <div class="code-row">
+                    <div class="code-line code-function">init</div>
+                    <div class="code-line code-bracket-outer">()</div>
+                    <div class="code-line">;</div>
+                </div>
 
-                <div class="code-line code-bracket-outer">while (</div><div class="code-line code-function">fscanf</div><div class="code-line bracket-inner-1">(</div>addrFile, <div class="code-line code-quotes">"</div><div class="code-line code-d">%d</div><div class="code-line code-quotes">"</div>, &logical_address<div class="code-line bracket-inner-1">)</div> != EOF<div class="code-line code-bracket-outer">) {</div>
+                <div class="code-row">
+                    <div class="code-line code-vartype">int </div> 
+                    <div class="code-line">logical_address = </div> 
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line">;</div>
+                </div>
 
+                <div class="code-row">
+                    <div class="code-line code-vartype">int </div> 
+                    <div class="code-line">frame_number = </div>
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line">;</div>
+                </div>
+
+                <div class="code-row">
+                    <div class="code-line code-vartype">int </div> 
+                    <div class="code-line">offset = </div>
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line">;</div>
+                </div>
+
+                <div class="code-row">
+                    <div class="code-line code-vartype">int </div> 
+                    <div class="code-line">page_number = </div>
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line">;</div>
+                </div>
+
+                <div class="code-row">
+                    <div class="code-line code-bracket-outer">while (</div>
+                    <div class="code-line code-function">fscanf</div>
+                    <div class="code-line bracket-inner-1">(</div>
+                    <div class="code-line">addrFile,</div> 
+                    <div class="code-line code-quotes">"</div>
+                    <div class="code-line code-d">%d</div>
+                    <div class="code-line code-quotes">"</div>
+                    <div class="code-line">, &logical_address</div>
+                    <div class="code-line bracket-inner-1">)</div>
+                    <div class="code-line"> != EOF</div>
+                    <div class="code-line code-bracket-outer">) {</div>
+                </div>
+                
+                <div class="code-row tab-1">
                     <div class="code-line code-comment">// Extract page number and offset from the logical address</div>
-                    page_number = <div class="code-line code-function">extract_page_number</div><div class="code-line code-bracket-inner-1">(</div>logical_address<div class="code-line code-bracket-inner-1">)</div>;
-                    offset = <div class="code-line code-function">extract_offset</div><div class="code-line code-bracket-inner-1">(</div>logical_address<div class="code-line code-bracket-inner-1">)</div>;
+                </div>
 
+                <div class="code-row tab-1">
+                    <div class="code-line">page_number = </div>
+                    <div class="code-line code-function">extract_page_number</div>
+                    <div class="code-line code-bracket-inner-1">(</div>
+                    <div class="code-line">logical_address</div>
+                    <div class="code-line code-bracket-inner-1">)</div>
+                    ;
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line">offset = </div>
+                    <div class="code-line code-function">extract_offset</div>
+                    <div class="code-line code-bracket-inner-1">(</div>
+                    <div class="code-line">logical_address</div>
+                    <div class="code-line code-bracket-inner-1">)</div>
+                    ;
+                </div>
+
+                <div class="code-row tab-1">
                     <div class="code-line code-comment">// Check TLB for the page number</div>
-                    frame_number = <div class="code-line code-function">check_tlb(page_number);</div>
-                    
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line">frame_number = </div>
+                    <div class="code-line code-function">check_tlb(</div>
+                    <div class="code-line">page_number</div>
+                    <div class="code-line code-function">)</div>
+                    ;
+                </div>
+                
+                <div class="code-row tab-1">
                     <div class="code-line code-comment">// If TLB miss check page table</div>
-                    <div class="code-line code-bracket-outer">if </div><div class="code-line code-bracket-inner-1">(</div>frame_number == <div class="code-line code-value">-1</div><div class="code-line code-bracket-inner-1">) {</div>
-                        frame_number = <div class="code-line code-function">check_ptable</div><div class="code-line code-bracket-inner-2">(</div>page_number<div class="code-line code-bracket-inner-2">)</div>;
+                </div>
 
-                        <div class="code-line code-comment">// If page fault load the page from the backing store</div>
-                        <div class="code-line code-bracket-outer">if </div><div class="code-line code-bracket-inner-2">(</div>frame_number == <div class="code-line code-value">-1</div><div class="code-line code-bracket-inner-2">) {</div>
-                            frame_number = <div class="code-line code-function">load_page</div><div class="code-line code-bracket-outer">(</div>page_number, bkstr<div class="code-line code-bracket-outer">)</div>;
-                        <div class="code-line code-bracket-inner-2">} </div> 
-                    <div class="code-line code-bracket-inner-1">} </div>
+                <div class="code-row tab-1">
+                    <div class="code-line code-bracket-outer">if </div>
+                    <div class="code-line code-bracket-inner-1">(</div>
+                    <div class="code-line">frame_number == </div>
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line code-bracket-inner-1">) {</div>
+                </div>
 
+                <div class="code-row tab-2">
+                    <div class="code-line">frame_number = </div>
+                    <div class="code-line code-function">check_ptable</div>
+                    <div class="code-line code-bracket-inner-2">(</div>
+                    <div class="code-line">page_number</div>
+                    <div class="code-line code-bracket-inner-2">)</div>
+                    ;
+                </div>
 
+                <div class="code-row tab-2">
                     <div class="code-line code-comment">// If page fault load the page from the backing store</div>
-                    <div class="code-line code-bracket-outer">if </div><div class="code-line code-bracket-inner-2">(</div>frame_number == <div class="code-line code-value">-1</div><div class="code-line code-bracket-inner-2">) {</div>
-                        <div class="code-line code-vartype">int </div> value = <div class="code-line code-function">get_value</div><div class="code-line code-bracket-inner-2">(</div>frame_number, offset<div class="code-line code-bracket-inner-2">)</div>;
-                        <div class="code-line code-function">printf</div><div class="code-line code-bracket-inner-2">(</div><div class="code-line code-quotes">"</div><div class="code-line code-d">%d</div><div class="code-line code-quotes">"</div>, value<div class="code-line code-bracket-inner-2">)</div>;
-                    <div class="code-line code-bracket-inner-1">} </div> 
-                <div class="code-line code-bracket-outer">} </div>
+                </div>
+
+                <div class="code-row tab-2">
+                    <div class="code-line code-bracket-outer">if </div>
+                    <div class="code-line code-bracket-inner-2">(</div>
+                    <div class="code-line">frame_number == </div>
+                    <div class="code-line code-value">-1</div>
+                    <div class="code-line code-bracket-inner-2">) {</div>
+                </div>
+
+                <div class="code-row tab-3">
+                    <div class="code-line">frame_number = </div>
+                    <div class="code-line code-function">load_page</div>
+                    <div class="code-line code-bracket-outer">(</div>
+                    <div class="code-line">page_number, bkstr</div>
+                    <div class="code-line code-bracket-outer">)</div>
+                    ;
+                </div>
+
+                <div class="code-row tab-2">
+                    <div class="code-line code-bracket-inner-2">} </div> 
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line code-bracket-inner-1">} </div>
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line code-comment">// Get the value from physical memory using the frame_number and offset</div>
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line code-bracket-outer">if </div>
+                    <div class="code-line code-bracket-inner-2">(</div>
+                    <div class="code-line">frame_number >= </div>
+                    <div class="code-line code-value">0</div>
+                    <div class="code-line code-bracket-inner-2">) {</div>
+                </div>
+
+                <div class="code-row tab-2">
+                    <div class="code-line code-vartype">int </div>
+                    <div class="code-line"> value = </div>
+                    <div class="code-line code-function">get_value</div>
+                    <div class="code-line code-bracket-inner-2">(</div>
+                    <div class="code-line">frame_number, offset</div>
+                    <div class="code-line code-bracket-inner-2">)</div>
+                    ;
+                </div>
+
+                <div class="code-row tab-2">
+                    <div class="code-line code-function">printf</div>
+                    <div class="code-line code-bracket-inner-2">(</div>
+                    <div class="code-line code-quotes">"</div>
+                    <div class="code-line code-d">%d</div>
+                    <div class="code-line code-quotes">"</div>
+                    <div class="code-line">, value</div>
+                    <div class="code-line code-bracket-inner-2">)</div>
+                    ;
+                </div>
+
+                <div class="code-row tab-1">
+                    <div class="code-line code-bracket-inner-1">} </div>
+                </div>
+
+                <div class="code-row">
+                    <div class="code-line code-bracket-outer">} </div>
+                </div>    
             </div>
 
         <!-- empty space -->
@@ -174,19 +347,194 @@
       </div>
 
 
+    <!-- Projects section -->
     <section id="projects" class="container py-5">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row g-4">
-        <!-- project card 2 -->
-        <div class="col-md-4">
-            <div class="card bg-secondary text-white h-100">
-            <div class="card-body">
-                <h5 class="card-title">Project Title</h5>
-                <p class="card-text">Project Description.</p>
+        <h2 class="text-center mb-4 animate-slide-up delay-1">Projects</h2>
+
+        <!-- row 1 -->
+        <div class="row g-4 animate-slide-up delay-2 mb-4">
+            
+            <!-- project card 1 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-primary">Synergy Commodities quote generator</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">Excel</span>
+                                <span class="badge bg-secondary">PDF</span>
+                                <span class="badge bg-secondary">Email Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            I developed Python-based quote generator that blended seamlessly with existing client workflows,
+                            resulting in an 80% reduction in the time required to generate quotes, improving overall efficiency
+                            and accuracy.
+                        </p>
+                        <p>
+                            The system employs existing Excel sheets to analyse and extract data from and automate the creation of
+                            PDF and email quote templates with less than 1% accuracy errors compared to manual data entry and
+                            creation.
+                        </p>
+                    </div>
+                </div>
             </div>
+              
+
+            <!-- project card 2 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-warning">Stock Locker</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">Machine Learning</span>
+                                <span class="badge bg-secondary">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            We developed a stock prediction model using Python and machine learning to make stock price predictions. 
+                            I architected the system from the ground up, 
+                            managed the development team, and authored documentation and milestones for the team.
+                        </p>
+                        <p>
+                            The model was trained on historical stock data and generated features to make predictions.
+                            Several models were tested for feasibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- project card 3 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-success">Inventory tracker</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">CSV</span>
+                                <span class="badge bg-secondary">Email Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            I created and optimised an advanced internal inventory tracking system utilizing Python.
+                            The system enhanced operational efficiency by eliminating over three manual oversight hours weekly.
+                            The system was designed to be user-friendly and easy to navigate, with a focus on providing accurate and timely information.
+                        </p>
+                        <p>
+                            The system integrated real-time data inputs and automated refill decisions.
+                            Refill decisions were made based on historical data and current stock levels.
+                            Requisition emails were automatically generated and sent by the system.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- row 2 -->
+        <div class="row g-4 animate-slide-up delay-3 mb-4">
+            
+            <!-- project card 1 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-primary">Synergy Commodities quote generator</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">Excel</span>
+                                <span class="badge bg-secondary">PDF</span>
+                                <span class="badge bg-secondary">Email Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            I developed Python-based quote generator that blended seamlessly with existing client workflows,
+                            resulting in an 80% reduction in the time required to generate quotes, improving overall efficiency
+                            and accuracy.
+                        </p>
+                        <p>
+                            The system employs existing Excel sheets to analyse and extract data from and automate the creation of
+                            PDF and email quote templates with less than 1% accuracy errors compared to manual data entry and
+                            creation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+              
+
+            <!-- project card 2 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-warning">Stock Locker</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">Machine Learning</span>
+                                <span class="badge bg-secondary">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            We developed a stock prediction model using Python and machine learning to make stock price predictions. 
+                            I architected the system from the ground up, 
+                            managed the development team, and authored documentation and milestones for the team.
+                        </p>
+                        <p>
+                            The model was trained on historical stock data and generated features to make predictions.
+                            Several models were tested for feasibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- project card 3 -->
+            <div class="project-box-wrapper col-md-4">
+                <div class="project-box collapsed-box" onclick="toggleBox(this)">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3 fs-1 text-info"><i class="bi bi-display"></i></div>
+                        <div>
+                            <div class="fw-bold text-success">Inventory tracker</div>
+                            <div>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">CSV</span>
+                                <span class="badge bg-secondary">Email Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            I created and optimised an advanced internal inventory tracking system utilizing Python.
+                            The system enhanced operational efficiency by eliminating over three manual oversight hours weekly.
+                            The system was designed to be user-friendly and easy to navigate, with a focus on providing accurate and timely information.
+                        </p>
+                        <p>
+                            The system integrated real-time data inputs and automated refill decisions.
+                            Refill decisions were made based on historical data and current stock levels.
+                            Requisition emails were automatically generated and sent by the system.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
 
     <script src="scripts/script.js"></script>
